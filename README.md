@@ -37,6 +37,7 @@ Step-by-step Installation:
 13. Send a provisioning file to the bot with the following commands:
     1. add
     2. delete
-
-
-*** XLSX FILE SPECS FOLLOWING ***
+    3. Send a provisioning Excel file to the Bot and specify "add" or "delete".
+       The Excel file comes in 2 flavours: a compact and a full version. The 2 file templates are available for download. Mandatory fields are "First Name", "Last Name", "Phone Number", "UserID", "Provisioning". The compact version uses default settings specified in the "credentials.py" file. The "Provisioning" column must be set to "DI" for Dedicated Instance (or UCM) provisioning, or "multitenant", for Webex org provisioning. Though all users appear in Control Hub, they are configured for Webex Calling or Calling in Dedicated Instance.
+       The full version includes more columns. The "Provisioning" column can be set to "DI" for Dedicated Instance provisioning, "multitenant" for Webex org provisioning. However if the user belongs to a specific Webex Calling location, the Provisioning cell will include that location instead of the keyword "multitenant". The other fields are not mandatory; if missing, the default values set in the "credentials.py" file will be used instead.
+    
