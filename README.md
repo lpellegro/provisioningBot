@@ -40,6 +40,7 @@ Step-by-step Installation:
 
 The provisioning Excel file comes in 2 flavours: a compact and a full version. 
 Two templates are available for download. 
+
 Mandatory fields are:
 "First Name", "Last Name", "Phone Number", "UserID", "Provisioning". 
 The compact version uses default settings specified in the "credentials.py" file. 
