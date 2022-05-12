@@ -196,7 +196,7 @@ def start(roomId):
                           })
      response = requests.post(f"{webexUrl}messages", headers=webexHeaders, data=payload)
      print(response.text)
-     app.run('0.0.0.0', port=5062)  #, ssl_context=('/etc/pki/nginx/ent-sso.crt', '/etc/pki/nginx/private/ent-sso.key'))
+     app.run('0.0.0.0', port=5062)
 
 if __name__ == '__main__':
     get_my_access_token()
