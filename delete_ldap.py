@@ -11,7 +11,7 @@ ad_admin = credentials ["ad_admin"]
 ad_password = credentials["ad_password"]
 search_base = credentials["search_base"]
 ad_ip = credentials["ad_ip"]
-userpassword = credentials["default_user_password"]
+userpassword = credentials["user_default_password"]
 def delete_ldap_user(first_name, last_name, userid):
     modifyFlag = False
     try:
